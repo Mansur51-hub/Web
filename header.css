@@ -1,0 +1,14 @@
+.header {
+    width: auto;
+    background-color: #272629;
+    text-align: center;
+    margin: 2px;
+    padding-bottom: 3px;
+}
+
+.header__h1 {
+    margin: 1px;
+    color: #e4e7de;
+    letter-spacing: 2px;
+    text-shadow: darkgrey 1px 1px 1px;
+}

@@ -3,30 +3,56 @@
 <head>
     <title>Мой проект</title>
     <!--link href="outline-prototype-safe.css" rel="stylesheet"-->
-    <link href="style.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="menu.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 <body>
 <div class="header">
     <header>
-        <h1>
-            Completely fair elastic cloud storage
+        <h1 class="header__h1">
+            Планиметрия
         </h1>
     </header>
 </div>
 <main>
     <div class="menu">
-        <nav>
-            <img id="icon" src="img/icon.png" alt="icon">
-            <a href="#"> Home </a>
-            <a href="#"> Files </a>
+        <nav class="menu__nav">
+            <img class="menu__icon" src="img/icon.png" alt="icon">
+            <a class="menu__a" href="#"> Теоремы </a>
+            <a class="menu__a " href="#"> Задачи </a>
         </nav>
     </div>
     <div class="main">
         <section>
-            <p>
-                Free cloud storage
-            </p>
+            <h3 class="main__h3">
+                История
+            </h3>
+            <ul>
+                <li class="main__li"> XVII в. до н.э. - первое сочинение, содержащее простейшие геометрические сведения
+                    (Древний Египет).
+                </li>
+                <li class="main__li">
+                    около 625 гг. до н.э. - III в. до н.э. - становление геометрии как математической науки.
+                </li>
+                <li class="main__li">
+                    В знаменитом сочинении Евклида "Начала" были систематизированы основные известные геометрические
+                    сведения. Был развит аксиоматический подход к построению геометрии, который состоит в том, что
+                    сначала
+                    формулируются основные положения (аксиомы), а затем на их основе посредством рассуждений
+                    доказываются
+                    другие утверждения (теоремы).
+                </li>
+                <li class="main__li">
+                    XVII в. н.э. - этап связан с накоплением знаний по алгебре. Выдающийся французский математик и
+                    философ
+                    Р.Декарт предложил новый подход к решению геометрических задач. Он ввел метод координат, связав
+                    геометрию и алгебру, что позволило решать многие геометрические задачи алгебраическими методами.
+                </li>
+
+            </ul>
         </section>
     </div>
 </main>

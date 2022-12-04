@@ -1,0 +1,19 @@
+.menu {
+    background-color: #272629;
+    width: 160px;
+    margin: 10px;
+}
+
+.menu__nav {
+
+}
+
+.menu__icon {
+    margin: 1px;
+    width: 158px;
+}
+
+.menu__a {
+    text-align: center;
+    color: #e4e7de;
+}
