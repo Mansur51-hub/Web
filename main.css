@@ -1,8 +1,12 @@
+html {
+    background-color: #272629;
+}
+
 .main {
     width: auto;
     height: auto;
     background-color: #272629;
-    margin: 2px;
+    margin: 2px 2px 100px 170px;
     padding: 10px;
 }
 
@@ -11,6 +15,7 @@
     letter-spacing: 2px;
     text-align: center;
     color: #e4e7de;
+    text-shadow: darkgrey 1px 1px 1px;
 }
 
 .main__li {
@@ -18,4 +23,25 @@
     color: #e4e7de;
     letter-spacing: 2px;
     text-shadow: darkgrey 1px 1px 1px;
+}
+
+@media screen and (max-height: 450px) {
+    .menu {
+        padding-top: 5px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+}
+
+.portraits {
+    margin: 20px 2px 2px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portraits__img {
+    width: 170px;
+    box-shadow: 0 0 5px 2px #e4e7de;
 }
