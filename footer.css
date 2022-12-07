@@ -1,9 +1,10 @@
 .footer {
-    width: 80%;
-    background-color: #272629;
+    width: 100%;
     color: #e4e7de;
+    background-color: #272629;
     position: fixed;
     bottom: 0;
-    margin-left: 170px;
+    margin-left: 10px;
     text-align: center;
+    border-top: solid 2px #e4e7de;
 }

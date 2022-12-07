@@ -1,5 +1,5 @@
 .container {
-    margin: 200px 2px 100px 170px;
+    margin: 200px 2px 100px 10px;
     border: solid 2px #e4e7de;
     display: grid;
     grid-template-columns: repeat(5, auto);
