@@ -1,0 +1,33 @@
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 65%;
+    background-color: #272629;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.loader {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    border: 5px solid #272629;
+    border-radius: 50%;
+    border-top-color: #e4e7de;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 2s spin infinite linear;
+    visibility: hidden;
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+       transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
