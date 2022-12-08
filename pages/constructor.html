@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title>Мой проект</title>
+    <!--link href="outline-prototype-safe.css" rel="stylesheet"-->
+    <link href="../styles/main.css" rel="stylesheet">
+    <link href="../styles/menu.css" rel="stylesheet">
+    <link href="../styles/header.css" rel="stylesheet">
+    <link href="../styles/footer.css" rel="stylesheet">
+    <link href="../styles/table.css" rel="stylesheet">
+    <script src="../js/timeLoad.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="header">
+    <header>
+        <h1 class="header__h1">
+            Планиметрия
+        </h1>
+    </header>
+</div>
+<main>
+    <div id="nav">
+        <img class="menu__icon" src="../img/icon.png" alt="icon">
+        <div class="menu-item">
+            Меню
+        </div>
+        <div class="main__menu" id="main__menu">
+            <a class="menu__a" href="../index.html"> Главная </a>
+            <a class="menu__a" href="theorems.html"> Теоремы </a>
+            <a class="menu__a" href="problems.html"> Задачи </a>
+            <a class="menu__a" href="#"> Предложить задачу </a>
+        </div>
+
+    </div>
+    <div class="main">
+        <form id="form" action="#">
+            <div>
+                <label for="source"></label><input placeholder="Источник" class="main__text" id="source" type="text"
+                                                   name="source"
+                                                   value="">
+            </div>
+            <br>
+            <div>
+                <label for="description"></label><textarea placeholder="Описание задачи" name="description"
+                                                           class="main__text"
+                                                           id="description"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="main__text"> Отправить</button>
+            </div>
+        </form>
+
+        <div class="main__problem" id="problems">
+        </div>
+    </div>
+
+</main>
+<div class="footer">
+    <footer>
+        <p>
+            © 2022 Mamedov Mansur
+        </p>
+        <p>
+        <p id="page_loaded"></p>
+    </footer>
+</div>
+<script src="../js/popupMenu.js"></script>
+<script src="../js/constructor.js"></script>
+</body>
+</html>

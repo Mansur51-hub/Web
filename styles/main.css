@@ -72,3 +72,14 @@ html {
     margin: 40px 3px 3px;
     padding: 5px;
 }
+
+.main__text {
+    font-family: "Times New Roman";
+    margin: 1px;
+    color: #272629;
+    letter-spacing: 2px;
+    text-shadow: darkgrey 1px 1px 1px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #e4e7de;
+}
