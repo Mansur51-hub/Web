@@ -83,3 +83,13 @@ html {
     font-size: medium;
     background-color: #e4e7de;
 }
+
+.main__text-input {
+    font-family: "Times New Roman";
+    margin: 1px;
+    color: #272629;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #e4e7de;
+}

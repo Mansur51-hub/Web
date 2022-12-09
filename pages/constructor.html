@@ -8,17 +8,12 @@
     <link href="../styles/header.css" rel="stylesheet">
     <link href="../styles/footer.css" rel="stylesheet">
     <link href="../styles/table.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/fancyInput.css" rel="stylesheet">
     <script src="../js/timeLoad.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
-<div class="header">
-    <header>
-        <h1 class="header__h1">
-            Планиметрия
-        </h1>
-    </header>
-</div>
 <main>
     <div id="nav">
         <img class="menu__icon" src="../img/icon.png" alt="icon">
@@ -36,14 +31,20 @@
     <div class="main">
         <form id="form" action="#">
             <div>
-                <label for="source"></label><input placeholder="Источник" class="main__text" id="source" type="text"
+                <p class="theorem__p"> Источник </p>
+            </div>
+            <div>
+                <label for="source"></label><input class="main__text-input" id="source" type="text"
                                                    name="source"
                                                    value="">
             </div>
             <br>
             <div>
-                <label for="description"></label><textarea placeholder="Описание задачи" name="description"
-                                                           class="main__text"
+                <p class="theorem__p"> Описание задачи </p>
+            </div>
+            <div>
+                <label for="description"></label><textarea name="description"
+                                                           class="main__text-input"
                                                            id="description"></textarea>
             </div>
             <br>
@@ -68,5 +69,11 @@
 </div>
 <script src="../js/popupMenu.js"></script>
 <script src="../js/constructor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/fancyInput.js"></script>
+<script>
+    <!-- Указываем какому типу объекта применить... -->
+    $('div :input[type!=button]:input[type!=submit]:input[type!=reset]').fancyInput();
+</script>
 </body>
 </html>
