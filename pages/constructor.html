@@ -8,7 +8,7 @@
     <link href="../styles/header.css" rel="stylesheet">
     <link href="../styles/footer.css" rel="stylesheet">
     <link href="../styles/table.css" rel="stylesheet">
-    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="../styles/fancyfields.css" rel="stylesheet">
     <link href="../styles/fancyInput.css" rel="stylesheet">
     <script src="../js/timeLoad.js"></script>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
 <body>
 <main>
     <div id="nav">
-        <img class="menu__icon" src="../img/icon.png" alt="icon">
+        <img class="menu__icon" src="../images/icon.png" alt="icon">
         <div class="menu-item">
             Меню
         </div>
@@ -24,12 +24,12 @@
             <a class="menu__a" href="../index.html"> Главная </a>
             <a class="menu__a" href="theorems.html"> Теоремы </a>
             <a class="menu__a" href="problems.html"> Задачи </a>
-            <a class="menu__a" href="#"> Предложить задачу </a>
+            <a class="menu__a" href="constructor.html"> Предложить задачу </a>
         </div>
 
     </div>
     <div class="main">
-        <form id="form" action="#">
+        <form class="from" id="form" action="#">
             <div>
                 <p class="theorem__p"> Источник </p>
             </div>
@@ -68,12 +68,20 @@
     </footer>
 </div>
 <script src="../js/popupMenu.js"></script>
+<script src="../js/menu.js"></script>
 <script src="../js/constructor.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../js/fancyInput.js"></script>
-<script>
-    <!-- Указываем какому типу объекта применить... -->
-    $('div :input[type!=button]:input[type!=submit]:input[type!=reset]').fancyInput();
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="../js/fancyfields-1.2-new-version.js"></script>
+<!-- Указываем какому типу объекта применить... -->
+<script type="text/javascript">
+    $(document).onload(function () {
+        $(".form").fancyfields();
+        $(".main__text-input").fancyfields({customScrollBar: true});
+
+        $(".main__text").submit(function () {
+            $(".main__text-input").fancyfields("reset");
+        });
+    });
 </script>
 </body>
 </html>

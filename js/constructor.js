@@ -32,8 +32,6 @@ function retrieveFromValue(event) {
     }
 
     createProblem(values.source, values.description, "new")
-
-    form.reset();
 }
 
 

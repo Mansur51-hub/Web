@@ -9,7 +9,7 @@ document.getElementById("nav").onmouseover = function (event) {
 document.onmouseover = function (event) {
     const target = event.target;
 
-    if (target.className !== 'menu-item' && target.className !== 'main__menu' && target.className !== "menu__a") {
+    if (target.className !== 'menu-item' && target.className !== 'main__menu' && target.className !== "menu__a" && target.className !== "menu__active") {
         closeMenu();
     }
 }
@@ -22,4 +22,3 @@ function closeMenu() {
         menu[i].style.display = "none";
     }
 }
-

@@ -6,7 +6,7 @@
     grid-template-rows: repeat(6, 3em);
 }
 
-.container div {
+.container__info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,31 +16,36 @@
     text-shadow: darkgrey 1px 1px 1px;
 }
 
-.container div:nth-child(n+1):nth-child(-n+6) {
+.container .container__info:nth-child(n+1):nth-child(-n+6) {
     background-color: grey;
 }
 
-.container div:nth-child(10n + 7) {
+.container .container__info:nth-child(10n + 7) {
     background-color: slategray;
 }
 
-.container div:nth-child(10n + 8) {
+.container .container__info:nth-child(10n + 8) {
     background-color: slategray;
 }
 
-.container div:nth-child(10n + 9) {
+.container .container__info:nth-child(10n + 9) {
     background-color: slategray;
 }
 
-.container div:nth-child(10n + 10) {
+.container .container__info:nth-child(10n + 10) {
     background-color: slategray;
 }
 
-.container div:nth-child(10n + 11) {
+.container .container__info:nth-child(10n + 11) {
     background-color: slategray;
 }
 
 .container_head {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    color: #e4e7de;
+    text-shadow: darkgrey 1px 1px 1px;
     grid-column-start: 1;
     grid-column-end: 6;
 }

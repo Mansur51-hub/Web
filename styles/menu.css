@@ -23,6 +23,19 @@
     display: flex;
 }
 
+.menu__active {
+    text-align: center;
+    align-items: center;
+    color: #e4e7de;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 3px solid #e4e7de;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    background-color: #666666;
+}
+
 .menu__a:hover {
     background-color: darkgrey;
 }
